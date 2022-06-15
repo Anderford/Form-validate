@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/src/fonts/monserrat/Montserrat-Regular.eot');
+    src: url('/src/fonts/monserrat/Montserrat-Regular.eot#iefix') format('embedded-opentype'),
+        url('/src/fonts/monserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('/src/fonts/monserrat/Montserrat-Regular.woff') format('woff'),
+        url('/src/fonts/monserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('/src/fonts/monserrat/Montserrat-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    
+}
+
+.formValidateTitle {
+    font: bold 40px/1.1 'Montserrat';
+    text-transform: uppercase;
+}
+
+.formValidatePage {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.formValidate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formValidateItem {
+    width: 300px;
+    margin-top: 25px;
+    padding: 13px;
+    border-radius: 15px;
+    border: 2px solid rgb(38, 104, 190);
+    outline: none;
+    font: bold 16px/1.1 'Montserrat';
+}
+
+.formValidateItem::placeholder {
+    font: bold 16px/1.1 'Montserrat';
+}
+
+.formValidateBtn {
+    font: bold 18px/1.1 'Montserrat';
+    width: 330px;
+    margin-top: 25px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(38, 104, 190);
+    color: white;
+}
+
+.formValidateBtn:disabled {
+    background-color: rgba(38, 104, 190, 0.466);
+}
+
+.errorMessage {
+    height: 0;
+    color: red;
+    font: normal 14px/1.1 'Montserrat';
+} 
